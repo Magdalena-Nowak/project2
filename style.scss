@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+  max-width: 120rem;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 20rem;
+  height: 30rem;
+  margin: 0 2rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  &__description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 2rem;
+    font-size: 1rem;
+    
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__image--one {
+    background-image: url(/img/pexels-matteo-badini-4064432.jpg);
+  }
+  &__image--two {
+    background-image: url(/img/pexels-lisa-2812164.jpg);
+  }
+  &__image--three {
+    background-image: url(/img/pexels-verschoren-maurits-3597423.jpg);
+  }
+  &__title {
+      margin: 1rem 0;
+      font-size: 1.6rem;
+  }
+}
